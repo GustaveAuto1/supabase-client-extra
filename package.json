@@ -1,0 +1,28 @@
+{
+  "name": "supabase-client-extra",
+  "version": "1.0.0",
+  "description": "An extended Supabase client with additional back API functionality",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustaveAuto1/supabase-client-extra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustaveAuto1/supabase-client-extra/issues"
+  },
+  "homepage": "https://github.com/GustaveAuto1/supabase-client-extra#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.3",
+    "axios": "^1.5.1"
+  }
+}
