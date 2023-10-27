@@ -2,7 +2,8 @@ import { SupabaseClient, SupabaseClientOptions } from "@supabase/supabase-js"
 import axios, { AxiosInstance } from "axios"
 
 class SupabaseExtraClient extends SupabaseClient {
-  private backApi: AxiosInstance
+  public backApi: AxiosInstance;
+  
   constructor(url: string, key: string, backApiUrl: string, options?: SupabaseClientOptions<"public">) {
     super(url, key, options)
     this.backApi = axios.create({
