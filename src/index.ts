@@ -2,7 +2,7 @@ import { SupabaseClient, SupabaseClientOptions } from "@supabase/supabase-js";
 import OpenAPIClientAxios, { Document } from "openapi-client-axios";
 
 
-class SupabaseExtraClient<T> extends SupabaseClient {
+export class SupabaseExtraClient<T> extends SupabaseClient {
   public backApi: T;
 
   constructor(
